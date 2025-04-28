@@ -64,40 +64,39 @@ const solutions = [
 
 const FeaturesGrid: React.FC = () => {
   return (
-    <div className="py-16 px-4 md:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Comprehensive Solutions
-          </h2>
-          <div className="h-1 w-24 bg-primary mx-auto rounded-full"></div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {solutions.map((solution, index) => {
-            return (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-              >
-                <div className="p-6">
-                  <div className={`${solution.color} inline-flex p-3 rounded-lg text-white mb-4`}>
-                    {solution.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    {solution.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {solution.description}
-                  </p>
-                </div>
-                <div className={`h-1 w-full absolute bottom-0 ${solution.color} opacity-75`}></div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+    <div className="py-16 px-4 md:px-8 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        Our Comprehensive Solutions
+      </h2>
+      <div className="h-1 w-24 bg-gradient-to-r from-[#2DD4BF] to-[#1A8A75] mx-auto rounded-full"></div>
     </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {solutions.map((solution, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div className="p-6">
+            <div className={`${solution.color} inline-flex p-3 rounded-lg text-white mb-4`}>
+              {solution.icon}
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              {solution.title}
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              {solution.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
   );
 };
 

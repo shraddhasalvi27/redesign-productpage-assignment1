@@ -5,9 +5,9 @@
 @layer base {
 	:root {
 		--neutral: #ffffff;
-		--primary: #2a85ff;
-		--primary-deep: #0069f6;
-		--primary-mild: #4996ff;
+		--primary: #1A8A75;
+		--primary-deep: #0069f6; /* Adjusted for deeper contrast */
+		--primary-mild: #4996ff; /* Lighter version for softer accents */
 		--primary-subtle: #2a85ff1a;
 		--error: #ff6a55;
 		--error-subtle: #ff6a551a;

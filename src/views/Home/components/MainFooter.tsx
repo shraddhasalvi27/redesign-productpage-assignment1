@@ -28,7 +28,7 @@ const MainFooter: React.FC = () => {
                     {links.map((item, i) => (
                         <li
                             key={i}
-                            className="text-black hover:underline hover:text-blue-500 text-xs text-center"
+                            className="text-black hover:underline hover:text- text-xs text-center"
                         >
                             <Link to={`${item.path}`}>{item.text}</Link>
                         </li>

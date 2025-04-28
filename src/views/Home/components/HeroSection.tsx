@@ -1,13 +1,13 @@
-import smallBG from '@/assets/images/main-bg-small.png';
-import { Button } from '@/components/ui';
-import HomeNavbar from '@/components/shared/HomeNav';
-import HcfSignupPopup from '@/components/shared/Popups/HcfSignupPopup';
+import smallBG from '@/assets/images/main-bg-small.png'
+import { Button } from '@/components/ui'
+import HomeNavbar from '@/components/shared/HomeNav'
+import HcfSignupPopup from '@/components/shared/Popups/HcfSignupPopup'
 
 interface HeroSectionProps {
-    scrollToSection: (ref: React.RefObject<HTMLElement>) => void;
-    featuresRef: React.RefObject<HTMLElement>;
-    contactRef: React.RefObject<HTMLElement>;
-    aboutRef: React.RefObject<HTMLElement>;
+    scrollToSection: (ref: React.RefObject<HTMLElement>) => void
+    featuresRef: React.RefObject<HTMLElement>
+    contactRef: React.RefObject<HTMLElement>
+    aboutRef: React.RefObject<HTMLElement>
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -16,10 +16,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     contactRef,
     aboutRef,
 }) => {
-
-
     return (
-        <div className="!bg-[#01052f] w-full relative flex flex-col py-2 md:py-5 overflow-hidden">
+        <div className="bg-gradient-to-r from-[#1F2A30] to-[#0D1B22] min-h-screen w-full flex flex-col overflow-hidden">
+            {/* Navbar */}
             <HomeNavbar
                 scrollToSection={scrollToSection}
                 featuresRef={featuresRef}
@@ -27,98 +26,88 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 aboutRef={aboutRef}
             />
 
-            <div className='min-h-[90vh] flex items-center'>
-                {/* Background video for larger screens */}
-                {/* <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="hidden md:block absolute top-0 left-0 min-w-full min-h-full object-cover z-[-10]"
-                >
-                    <source src={bgVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video> */}
+            {/* Main Content */}
+            <div className="flex flex-col items-center justify-center text-center relative z-10 text-white w-full max-w-[1440px] mx-auto px-6 min-h-screen pt-32">
+                {/* Heading */}
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight capitalize text-slate-50 font-lexend">
+                    <span
+                        className="text-white font-playfair"
+                        style={{ fontWeight: 10 }}
+                    >
+                        AI Front Office
+                    </span>
+                    <br />
+                    for Healthcare Agents
+                </h1>
 
-                {/* Background image for mobile */}
-                <img
-                    src={smallBG}
-                    alt="background_image"
-                    className="md:hidden h-full w-full object-cover absolute top-0 left-0 z-[-10]"
-                />
+                {/* Subheading */}
+                <p className="mt-8 text-xl md:text-xl lg:text-xl leading-relaxed text-[#f6f8f8] max-w-4xl font-Nunito">
+                    Create your{' '}
+                    <span className="font-normal inline-block tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
+                        AI Store
+                    </span>{' '}
+                    in just 2 minutes.
+                    <br />
+                    Accelerate growth with{' '}
+                    <span className="font-normal inline-block tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
+                        Digital Marketing
+                    </span>{' '}
+                    tools.
+                </p>
 
-                {/* Overlay to ensure text readability */}
-                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-[-5]"></div>
-
-                <div className="relative z-10 text-white w-full flex flex-col lg:flex-row-reverse md:mt-6 lg:mt-0 lg:items-center lg:justify-between px-4 max-w-[1538px] mx-auto">
-                    {/* Video Section */}
-                    <div className="lg:w-5/12 mt-8 lg:mt-0 lg:mb-0 mb-6">
-                        {/* <div className="relative overflow-hidden pt-[56.25%] rounded-lg shadow-lg">
-                            <iframe
-                                src={`https://www.youtube.com/embed/xQl8i2sO_Ls?autoplay=1&mute=${isMuted ? 1 : 0
-                                    }&loop=1&playlist=xQl8i2sO_Ls&controls=0&showinfo=0&rel=0`}
-                                title="Product Demo Video"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                className="absolute top-0 left-0 w-full h-full"
-                            ></iframe>
-                            <button
-                                onClick={toggleMute}
-                                className="absolute bottom-4 right-4 bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all"
+                {/* CTA Button */}
+                <div className="mt-10">
+                    <HcfSignupPopup
+                        popupButtonStatus
+                        buttonChildren={
+                            <Button
+                                block
+                                variant="solid"
+                                className="bg-gradient-to-r from-[#2DD4BF] to-[#1A8A75] hover:from-[#1A8A75] hover:to-[#2DD4BF] text-lg font-semibold text-white py-3 px-10 rounded-full shadow-lg transition-all duration-300 max-w-[220px]"
                             >
-                                {isMuted ? (
-                                    <IoVolumeMuteOutline size={24} />
-                                ) : (
-                                    <IoVolumeHighOutline size={24} />
-                                )}
-                            </button>
-                        </div> */}
-                    </div>
+                                Get Started
+                            </Button>
+                        }
+                    />
+                </div>
 
-                    {/* Content Section */}
-                    <div className="lg:w-1/2 lg:pr-8">
-                        <h1 className="text-2xl md:text-4xl font-semibold mb-4 capitalize text-white">
-                            <span className="text-primary">AI front office </span> <br />
-                            for healthcare agents
-                        </h1>
-                        <p style={{ lineHeight: '0.7' }} className="text-lg my-8 font-light">
-                            Create <span className="text-primary font-bold">AI Store</span>  in 2 min <br />
-                            <br />
-                            Scale with{' '}
-                            <span className="font-bold text-primary">
-                                Digital Marketing
-                            </span>{' '}
-                        </p>
-                        <div>
-                            <HcfSignupPopup popupButtonStatus buttonChildren={<Button block variant='solid' className='rounded-[5px] max-w-[200px]'>Get Started</Button>} />
+                {/* Stats */}
+                <div className="flex flex-wrap justify-center gap-10 mt-16">
+                    {[
+                        { value: '2100+', label: 'Qualified Doctors' },
+                        { value: '1000+', label: 'Hospitals' },
+                        { value: '800+', label: 'Treatment Plans' },
+                    ].map((stat, index) => (
+                        <div key={index} className="text-center">
+                            <h2 className="text-4xl font-bold text-white font-nunito">
+                                {stat.value}
+                            </h2>
+                            <p className="text-lg text-gray-300 mt-2 capitalize font-Nunito tracking-wider">
+                                {stat.label}
+                            </p>
                         </div>
-                        <div className="text-white flex gap-12 mt-8 flex-wrap">
-                            <div>
-                                <h1 className="text-3xl font-bold text-white">
-                                    2100<span className="text-primary ml-1">+</span>
-                                </h1>
-                                <p className="text-lg capitalize">qualified doctors</p>
-                            </div>
-                            <div>
-                                <h1 className="text-3xl font-bold text-white">
-                                    1000<span className="text-primary ml-1">+</span>
-                                </h1>
-                                <p className="text-lg capitalize">hospitals</p>
-                            </div>
-                            <div>
-                                <h1 className="text-3xl font-bold text-white">
-                                    800<span className="text-primary ml-1">+</span>
-                                </h1>
-                                <p className="text-lg capitalize">Treatment Plans</p>
-                            </div>
+                    ))}
+                </div>
+
+                {/* Video Section */}
+                <div className="w-full flex justify-center items-center px-4 py-12 bg-[#1A8A75] mt-10 rounded-lg mb-5">
+                    <div className="bg-[#0D1B22] p-4 md:p-8 rounded-3xl shadow-2xl max-w-6xl w-full">
+                        <div className="rounded-2xl overflow-hidden aspect-video">
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/xQl8i2sO_Ls?list=TLGG0PJLA9GwZ7syNzA0MjAyNQ"
+                                title="Medical Report Demo gogetwell.ai"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    );
-};
+    )
+}
 
-export default HeroSection;
+export default HeroSection

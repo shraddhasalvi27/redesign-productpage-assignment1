@@ -47,6 +47,11 @@ module.exports = {
 					'"Courier New"',
 					'monospace',
 				],
+				
+				roboto: ['Roboto', 'sans-serif'],
+				lexend:['sans-serif'],
+				Nunito:['sans-serif'],
+				playfair: ['Playfair Display', 'serif'],
 			},
 			screens: {
 				xs: '576px',

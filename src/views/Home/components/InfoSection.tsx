@@ -55,9 +55,9 @@ const Section: React.FC<SectionProps> = ({
                 </div>
 
                 <div className="space-y-4">
-                    <p className="text-gray-600 leading-relaxed">{content1}</p>
+                    <p className="text-gray-100 leading-relaxed">{content1}</p>
 
-                    <p className="text-gray-600 leading-relaxed">{content2}</p>
+                    <p className="text-gray-100 leading-relaxed">{content2}</p>
                 </div>
 
                 {/* Feature Points */}
@@ -72,7 +72,7 @@ const Section: React.FC<SectionProps> = ({
                             <h4 className="font-semibold text-gray-800">
                                 {icontitle1}
                             </h4>
-                            <p className="text-sm text-gray-600">{iconp1}</p>
+                            <p className="text-sm text-gray-100">{iconp1}</p>
                         </div>
                     </div>
 
@@ -86,7 +86,7 @@ const Section: React.FC<SectionProps> = ({
                             <h4 className="font-semibold text-gray-800">
                                 {icontitle2}
                             </h4>
-                            <p className="text-sm text-gray-600">{iconp2}</p>
+                            <p className="text-sm text-gray-100">{iconp2}</p>
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@ const FullPageSections = () => {
 
 
     return (
-        <div className="scroll-smooth max-w-[1538px] mx-auto">
+        <div className="scroll-smooth max-w-[1538px] mx-auto  bg-gradient-to-l from-[#20443a] to-[#243a63]">
             <div className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col gap-y-32">
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                     {/* Image Section */}
@@ -205,11 +205,11 @@ const FullPageSections = () => {
                             <h2 className="text-3xl font-bold text-gray-800 mb-2">
                                 About Us
                             </h2>
-                            <div className="h-1 w-20 bg-primary rounded-full"></div>
+                            <div className="h-1 w-20 bg-gradient-to-r from-[#2DD4BF] to-[#1A8A75] rounded-full"></div>
                         </div>
 
                         <div className="space-y-4">
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-gray-100 leading-relaxed ">
                                 We are a pioneering AI-driven platform focused
                                 on revolutionizing the medical tourism industry.
                                 By addressing inefficiencies and
@@ -219,7 +219,7 @@ const FullPageSections = () => {
                                 personalized care across borders.
                             </p>
 
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-gray-100 leading-relaxed">
                                 Our cutting-edge solutions are designed to
                                 streamline processes and enhance the overall
                                 patient experience.
@@ -232,7 +232,7 @@ const FullPageSections = () => {
                                 <div className="flex-shrink-0">
                                     <div className="p-3 bg-blue-100 rounded-lg">
                                         <svg
-                                            className="w-6 h-6 text-primary"
+                                            className="w-6 h-6 text-[#1A8A75]"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -250,7 +250,7 @@ const FullPageSections = () => {
                                     <h4 className="font-semibold text-gray-800">
                                         Modern Solutions
                                     </h4>
-                                    <p className="text-sm text-gray-600">
+                                    <p className="text-sm text-gray-100">
                                         Leveraging AI technology for healthcare
                                     </p>
                                 </div>
@@ -260,7 +260,7 @@ const FullPageSections = () => {
                                 <div className="flex-shrink-0">
                                     <div className="p-3 bg-blue-100 rounded-lg">
                                         <svg
-                                            className="w-6 h-6 text-primary"
+                                            className="w-6 h-6 text-[#1A8A75]"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -278,7 +278,7 @@ const FullPageSections = () => {
                                     <h4 className="font-semibold text-gray-800">
                                         Patient-Centric
                                     </h4>
-                                    <p className="text-sm text-gray-600">
+                                    <p className="text-sm text-gray-100">
                                         Personalized healthcare experiences
                                     </p>
                                 </div>
@@ -303,11 +303,11 @@ const FullPageSections = () => {
                             <h2 className="text-3xl font-bold text-gray-800 mb-2">
                                 Our Mission
                             </h2>
-                            <div className="h-1 w-20 bg-primary rounded-full"></div>
+                            <div className="h-1 w-20 bg-gradient-to-r from-[#2DD4BF] to-[#1A8A75] rounded-full"></div>
                         </div>
 
                         <div className="space-y-4">
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-gray-100 leading-relaxed">
                                 Our mission is to simplify the complex medical
                                 tourism process by leveraging advanced AI tools
                                 that optimize healthcare facilitators
@@ -316,7 +316,7 @@ const FullPageSections = () => {
                                 stress-free treatment journeys.
                             </p>
 
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-gray-100 leading-relaxed">
                                 We strive to become the leading platform for
                                 healthcare tourism management and digital
                                 transformation.
@@ -328,7 +328,7 @@ const FullPageSections = () => {
                                 <div className="flex-shrink-0">
                                     <div className="p-3 bg-blue-100 rounded-lg">
                                         <svg
-                                            className="w-6 h-6 text-primary"
+                                            className="w-6 h-6 text-[#1A8A75]"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -343,10 +343,10 @@ const FullPageSections = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-gray-800">
+                                    <h4 className="font-semibold">
                                         AI-Powered Solutions
                                     </h4>
-                                    <p className="text-sm text-gray-600">
+                                    <p className="text-sm text-gray-100">
                                         Optimizing operations with advanced
                                         technology
                                     </p>
@@ -357,7 +357,7 @@ const FullPageSections = () => {
                                 <div className="flex-shrink-0">
                                     <div className="p-3 bg-blue-100 rounded-lg">
                                         <svg
-                                            className="w-6 h-6 text-primary"
+                                            className="w-6 h-6 text-[#1A8A75]"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -375,7 +375,7 @@ const FullPageSections = () => {
                                     <h4 className="font-semibold text-gray-800">
                                         Growth Focus
                                     </h4>
-                                    <p className="text-sm text-gray-600">
+                                    <p className="text-sm text-gray-100">
                                         Maximizing revenue and opportunities
                                     </p>
                                 </div>
@@ -400,11 +400,11 @@ const FullPageSections = () => {
                             <h2 className="text-3xl font-bold text-gray-800 mb-2">
                                 The Challenges We Solve
                             </h2>
-                            <div className="h-1 w-20 bg-primary rounded-full"></div>
+                            <div className="h-1 w-20 bg-gradient-to-r from-[#2DD4BF] to-[#1A8A75] rounded-full"></div>
                         </div>
 
                         <div className="space-y-4">
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-gray-100 leading-relaxed">
                                 Medical tourism, especially in India, is plagued
                                 by disorganization and inefficiency.
                                 Facilitators often rely on outdated methods,
@@ -412,7 +412,7 @@ const FullPageSections = () => {
                                 support, and missed growth opportunities.
                             </p>
 
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-gray-100 leading-relaxed">
                                 Our platform addresses these pain points by
                                 streamlining lead management and improving
                                 operational efficiency for facilitators and
@@ -426,7 +426,7 @@ const FullPageSections = () => {
                                 <div className="flex-shrink-0">
                                     <div className="p-3 bg-blue-100 rounded-lg">
                                         <svg
-                                            className="w-6 h-6 text-primary"
+                                            className="w-6 h-6 text-[#1A8A75]"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -444,7 +444,7 @@ const FullPageSections = () => {
                                     <h4 className="font-semibold text-gray-800">
                                         Efficient Operations
                                     </h4>
-                                    <p className="text-sm text-gray-600">
+                                    <p className="text-sm text-gray-100">
                                         Streamlined booking and management
                                     </p>
                                 </div>
@@ -454,7 +454,7 @@ const FullPageSections = () => {
                                 <div className="flex-shrink-0">
                                     <div className="p-3 bg-blue-100 rounded-lg">
                                         <svg
-                                            className="w-6 h-6 text-primary"
+                                            className="w-6 h-6 text-[#1A8A75]"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -472,7 +472,7 @@ const FullPageSections = () => {
                                     <h4 className="font-semibold text-gray-800">
                                         Enhanced Support
                                     </h4>
-                                    <p className="text-sm text-gray-600">
+                                    <p className="text-sm text-gray-100">
                                         Improved patient communication
                                     </p>
                                 </div>

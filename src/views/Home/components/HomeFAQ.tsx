@@ -75,14 +75,16 @@ const FAQ = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 py-16 px-2 md:px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screenbg-gradient-to-r from-[#596d77] to-[#47575e]
+
+ py-16 px-2 md:px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h1 className="text-3xl font-bold text-gray-900 mb-4">
                         Frequently Asked Questions
                     </h1>
-                    <div className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full" />
+                    <div className="h-1 w-24 bg-gradient-to-r from-[#2DD4BF] to-[#1A8A75] mx-auto rounded-full" />
                 </div>
 
                 {/* FAQ Items */}
